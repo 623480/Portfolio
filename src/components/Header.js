@@ -1,4 +1,5 @@
 import SRAVAN from "../assets/SRAVAN.jpg";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -14,9 +15,15 @@ const Header = () => {
         </div>
         <div className="font-bold tracking-[1px] text-xs py-[26px]">
           <ul className="flex">
-            <li className="mx-2 py-[26px]">ABOUT</li>
-            <li className="mx-2 py-[26px]">EXPERIENCE</li>
-            <li className="mx-2 py-[26px]">SKILLS</li>
+            <li className="mx-2 py-[26px] cursor-pointer">
+              <Link to="Info" spy={true} smooth={true}>HOME</Link>
+            </li>
+            <li className="mx-2 py-[26px] cursor-pointer">
+              <Link to="About" spy={true} smooth={true}>ABOUT</Link>
+            </li>
+            <li className="mx-2 py-[26px] cursor-pointer">
+              <Link to="Experience" spy={true} smooth={true}>EXPERIENCE</Link>
+            </li>
             <li className="mx-2 py-[26px] ">RESUME</li>
           </ul>
         </div>

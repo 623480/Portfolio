@@ -2,7 +2,7 @@ import AD_LOGO from "../assets/AD_LOGO.png";
 
 const Experience = () => {
   return (
-    <div className="bg-[#fafafa] h-lvh text-center">
+    <div className="bg-[#fafafa] h-lvh text-center" id="Experience">
       <h1 className="text-xl font-bold tracking-[3px] my-12 py-12">
         Education & Experience.
       </h1>
